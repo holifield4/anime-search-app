@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-ios-primary: #f2f2f7;
+  --color-ios-secondary: #8e8e93;
+  --color-ios-label-primary: #1c1c1e;
+  --color-ios-label-secondary: #48484a;
+  --color-ios-success: #34c759;
+  --color-ios-warning: #ff8d28;
+  --color-ios-error: #ff383c;
+  --color-ios-teal: #00c2d0;
+  --color-ios-blue: #0088ff;
+  --color-ios-yellow: #ffcc00;
+  --color-ios-cyan: #00c0e8;
+  --color-ios-brown: #ac7f5e;
+  --color-ios-purple: #cb30e0;
+}
