@@ -10,7 +10,7 @@ const http = axios.create({
 });
 
 http.interceptors.response.use(function (response: AxiosResponse) {
-  return response.data as AxiosResponse;
+  return response as AxiosResponse;
 });
 
 export default http;
