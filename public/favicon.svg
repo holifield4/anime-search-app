@@ -1,0 +1,9 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+	<title>favicon</title>
+	<defs>
+		<image  width="128" height="128" id="img1" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAIAAAACAAgMAAAC+UIlYAAAAAXNSR0IB2cksfwAAAAlQTFRFAAAA////w8PDApW87wAAAbFJREFUeJzt1jFPhDAUB3COxMR09ys49AO4EI2Lq3GRECdyo8ZR4kSI4+06Noyk08VRFz8Fg1/hdhYT42sfkCu0r8fdZuhErj+O9v0fDYvAMxYzmIETHEVfNDiJ1lbQ3+gC/e8zmAEBqoQGYRVPA6FIacBEYgJW+oAwFwk30AAeORHwfAjqVxNkqVkH6QXNEw14ZgJZF1NB/kgDJnygfNgGOisDhNXhYPO5BXTaZkdJE6isrED1qh3wjbrAZ5vgsvvbny2g0yaBysoOVAUJwModgY7C9maxskkPBb8JCXihQbtbKwhiGjwf7wQw7SG4Oi2gQEwtD7Magtuz1A9kzVUhHOAiASBVCpj2aA3XGqg5zMoOVsINbmIanCcxFEjXCKMYg/qFBNEdAph0gWZZxXqSBk3a9fYQfGf3EBLswAnyJeyRAB9CAcihTXsMyrQFmJULlLELvFcFJAULcIMAmgEqJXM7WEsFup7YC/BCAZ6tfIA1TqBC4nmIWY0Bng5M+EAZuACeUGEVYBR7g0BOA/0XKVx0AI8hy1dx20ntm2n7bMazngA42FtKg37MYAb/D/wBU02GkDVRTj4AAAAASUVORK5CYII="/>
+	</defs>
+	<style>
+	</style>
+	<use id="Background" href="#img1" x="0" y="0"/>
+</svg>
