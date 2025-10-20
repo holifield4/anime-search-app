@@ -18,7 +18,7 @@ const AnimePagination = ({ pagination, onPageChange, isLoading }: PaginationProp
     const maxVisiblePages = 5;
 
     let startPage = Math.max(1, current_page - Math.floor(maxVisiblePages / 2));
-    let endPage = Math.min(last_visible_page, startPage + maxVisiblePages - 1);
+    const endPage = Math.min(last_visible_page, startPage + maxVisiblePages - 1);
 
     if (endPage - startPage + 1 < maxVisiblePages) {
       startPage = Math.max(1, endPage - maxVisiblePages + 1);

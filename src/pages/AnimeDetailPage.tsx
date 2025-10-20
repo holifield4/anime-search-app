@@ -16,7 +16,7 @@ const AnimeDetailPage = () => {
     if (params.id) {
       dispatch(getAnimeByIdAsync(params.id));
     }
-  }, [dispatch]);
+  }, [dispatch, params.id]);
 
   if (animeDetail.isLoading) {
     return (

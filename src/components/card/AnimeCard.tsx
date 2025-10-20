@@ -1,16 +1,13 @@
 import { useNavigate } from "react-router-dom";
 import type { Anime } from "../../types/anime.types";
 
-interface AnimeCardProps
-  extends Pick<Anime, "mal_id" | "title" | "type" | "images" | "episodes"> {}
-
 const AnimeCard = ({
   mal_id,
   title,
   type,
   images,
   episodes,
-}: AnimeCardProps) => {
+}: Pick<Anime, "mal_id" | "title" | "type" | "images" | "episodes"> ) => {
   const navigate = useNavigate();
 
   const handleClick = () => {

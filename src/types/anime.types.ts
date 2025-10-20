@@ -43,7 +43,7 @@ export interface Anime {
   licensors: Demographic[];
   studios: Demographic[];
   genres: Demographic[];
-  explicit_genres: any[];
+  explicit_genres: ExplicitGenres[];
   themes: Demographic[];
   demographics: Demographic[];
 }
@@ -144,4 +144,11 @@ export interface Items {
   count: number;
   total: number;
   per_page: number;
+}
+
+export interface ExplicitGenres {
+  mal_id: number;
+  type: string;
+  name: string;
+  url: string
 }
