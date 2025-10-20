@@ -24,7 +24,7 @@ const App = () => {
         <PageLayout>
           <Routes>
             <Route path="/" element={<AnimeSearchPage />} />
-            <Route path="/anime/details/:id" element={<AnimeDetailPage />} />\
+            <Route path="/anime/details/:id" element={<AnimeDetailPage />} />
             <Route
               path="*"
               element={
