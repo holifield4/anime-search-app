@@ -16,21 +16,21 @@ const AnimeCard = ({
 
   return (
     <div
-      className="relative overflow-hidden w-50 h-60 md:w-60 md:h-80 rounded-3xl cursor-pointer bg-cover bg-center shadow-md hover:shadow-lg shadow-ios-label-secondary hover:scale-105 group transition-all duration-300"
+      className="relative overflow-hidden w-40 h-60 md:w-60 md:h-80 rounded-3xl cursor-pointer bg-cover bg-center shadow-md hover:shadow-lg shadow-ios-label-secondary hover:scale-105 group transition-all duration-300"
       style={{
         backgroundImage: `url('${images.webp.image_url}')`,
       }}
       onClick={handleClick}
     >
       {/* overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+      <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 hover:from-black/90 hover:via-black/40 to-transparent"></div>
 
       {/* content */}
-      <div className="absolute bottom-0 left-0 right-0 p-6 text-white">
-        <h3 className="text-xl font-bold mb-2 line-clamp-2">{title}</h3>
-        <div className="flex justify-between items-center">
+      <div className="absolute bottom-0 left-0 right-0 p-4 md:p-6 text-ios-primary">
+        <h3 className="text-lg md:text-xl font-bold mb-2 line-clamp-2">{title}</h3>
+        <div className="w-full flex justify-start">
           {type !== null && (
-            <span className="bg-ios-blue px-3 py-1 rounded-full text-sm font-semibold">
+            <span className="bg-ios-blue px-3 py-1 rounded-full text-xs md:text-sm line-clamp-1">
               {type}
               {type === "TV" &&
                 episodes !== null &&

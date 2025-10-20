@@ -15,7 +15,7 @@ const AnimePagination = ({ pagination, onPageChange, isLoading }: PaginationProp
 
   const generatePageNumbers = () => {
     const pages = [];
-    const maxVisiblePages = 5;
+    const maxVisiblePages = 3;
 
     let startPage = Math.max(1, current_page - Math.floor(maxVisiblePages / 2));
     const endPage = Math.min(last_visible_page, startPage + maxVisiblePages - 1);
@@ -46,7 +46,7 @@ const AnimePagination = ({ pagination, onPageChange, isLoading }: PaginationProp
   const arrowClasses = "flex items-center justify-center w-10 h-10 rounded-full bg-ios-primary hover:bg-ios-blue-2 disabled:hover:bg-ios-primary hover:text-ios-primary disabled:opacity-70 disabled:cursor-not-allowed transition-all duration-200 active:scale-95 cursor-pointer disabled:text-ios-label-secondary"
 
   return (
-    <div className="flex items-center justify-center space-x-2 py-6 text-ios-label-secondary">
+    <div className="flex items-center justify-center space-x-1 md:space-x-2 py-6 text-ios-label-secondary">
       {/* previous page */}
       <button
         onClick={() => onPageChange(current_page - 1)}
