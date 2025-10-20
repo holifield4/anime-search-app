@@ -12,12 +12,14 @@ const ScrollToTop = ({ onClick, showScrollTop }: ScrollToTopProps) => {
             w-12 h-12 rounded-full
             bg-ios-blue
             shadow-md
+            dark:shadow-sm
             shadow-ios-secondary
             transition-all duration-500 ease-[cubic-bezier(0.4,0,0.2,1)]
-            hover:bg-ios-blue/90
+            hover:bg-ios-blue/80
             active:scale-95
             focus:outline-none
             flex items-center justify-center
+            cursor-pointer
             ${
               showScrollTop
                 ? "opacity-100 translate-y-0 scale-100"
