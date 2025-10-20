@@ -7,7 +7,7 @@ export class AnimeService {
       const params = new URLSearchParams();
       if (q) params.append("q", q);
       params.append("page", page.toString());
-      const res = await http.get(`/anime?${params}`);
+      const res = await http.get(`/anime?limit=20&${params}`);
       return res.data;
     } catch (e) {
       if (e instanceof AxiosError) {
