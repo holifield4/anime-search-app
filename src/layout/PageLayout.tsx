@@ -46,11 +46,11 @@ const PageLayout = ({ children }: PageLayoutProps) => {
   }, [location]);
 
   return (
-    <div className="w-full h-[100dvh] flex flex-col overflow-hidden">
+    <div className={`w-full h-[100dvh] flex flex-col overflow-hidden font-inter`}>
       <Navbar />
       <div
         ref={contentRef}
-        className="w-full flex-1 overflow-auto bg-ios-yellow relative"
+        className="flex-1 overflow-auto bg-[url('/src/assets/bg.svg')] relative dark:bg-[url('/src/assets/darkbg.svg')] bg-cover bg-no-repeat transition-all"
       >
         {children}
         <ScrollToTop onClick={scrollToTop} showScrollTop={showScrollTop} />
