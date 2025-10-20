@@ -1,8 +1,13 @@
+@font-face{
+  font-family: Inter;
+  src: url("../src/assets/fonts/Inter_18pt-Regular.ttf");
+}
 @import "tailwindcss";
 
 @custom-variant dark (&:where(.dark, .dark *));
 
 @theme {
+  --font-inter: Inter, "sans-serif";
   --color-ios-primary: #f2f2f7;
   --color-ios-secondary: #8e8e93;
   --color-ios-label-primary: #1c1c1e;
@@ -12,8 +17,16 @@
   --color-ios-error: #ff383c;
   --color-ios-teal: #00c2d0;
   --color-ios-blue: #0088ff;
+  --color-ios-blue-2: #1e70f4;
   --color-ios-yellow: #ffcc00;
   --color-ios-cyan: #00c0e8;
   --color-ios-brown: #ac7f5e;
   --color-ios-purple: #cb30e0;
+
+  /* dark */
+  --color-dark-primary: #2c2c2e;
+  --color-dark-secondary: #636366;
+  --color-dark-label: #e5e5ea;
+  --color-dark-label-2: #aeaeb2;
 }
+
